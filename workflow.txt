@@ -1,0 +1,14 @@
+everyday login 
+cd to the amz folder 
+source amz/bin/activate
+docker run -p 8000:8000 amazon/dynamodb-local
+
+
+One time install 
+projectname = amz
+python3 -m virtualenv amz
+source amz/bin/activate
+pip install ipykernel
+ipython kernel install --user --name=amz
+
+

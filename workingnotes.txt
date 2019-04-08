@@ -1,0 +1,7 @@
+create a virtual env 
+install dash and the components required 
+
+realized that the event property is removed from the dash library so we need 
+accomidate that 
+need to change the local database from inmemoery to a file based one 
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.UsageNotes.html
