@@ -4,9 +4,9 @@ https://github.com/plotly/dash-wind-streaming so if you want to look into the or
 
 Below are the main objectives:
 1. Use Dynamodb instead of sqllite
-2. Create a basic wind sensor simulator as Lambda function
-3. Use Lambda functions to push data from the simulator to dynamoDB
-4. Host the dash app in AWS infrastructure. 
+2. Create a basic wind sensor simulator and run it on EC2 nano
+3. Use EC2 to push data from the simulator to dynamoDB
+4. Host the dash app in Elastic BeanStack. 
 
 Development Machine set up. Below are the major steps to get a development machine setup. Linux is preferred 
 
@@ -21,4 +21,6 @@ Development Machine set up. Below are the major steps to get a development machi
 9. [pip install boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html)
 10. make the virtualenv kernal available for the [Jupyter notebook](https://anbasile.github.io/programming/2017/06/25/jupyter-venv/)
 11. prototype in jupyter notebook
-12. push to git 
+12. push to git
+13. deploy using AWS CLI tools like eb, sam and aws
+
