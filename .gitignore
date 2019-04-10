@@ -1,2 +1,6 @@
 /amz
 /lambda_fakesensor/package
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

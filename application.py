@@ -59,10 +59,10 @@ def getdisplay_df():
     return df
 
 app = dash.Dash(
-    'streaming-wind-app',
+    __name__,
     external_stylesheets=external_css
 )
-server = app.server
+application = app.server
 
 app.layout = html.Div([
     html.Div([
@@ -385,4 +385,6 @@ def deselect_auto(autoValue, sliderValue):
         return '# of Bins: ' + str(int(sliderValue))
 
 if __name__ == '__main__':
-    app.run_server()
+    application.debug = True
+    application.run()
+
